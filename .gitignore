@@ -1,0 +1,48 @@
+# --- Python / Backend ---
+__pycache__/
+*.py[cod]
+*$py.class
+backend/.env
+backend/venv/
+backend/.pytest_cache/
+
+# --- GIS Data (CRITICAL: DO NOT COMMIT) ---
+*.tif
+*.tiff
+*.cog.tif
+*.tfw
+*.xml
+*.ovr
+*.aux
+*.cpg
+*.dbf
+*.prj
+*.sbn
+*.sbx
+*.shp
+*.shx
+*.zip
+*.rar
+*.7z
+backend/data/raw/*
+backend/data/cog/*
+!backend/data/raw/.gitkeep
+!backend/data/cog/.gitkeep
+
+# --- Specific Data Folders ---
+Chuyen de*
+Quan ly*
+
+# --- Javascript / Frontend ---
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/coverage/
+
+# --- IDE / System ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
