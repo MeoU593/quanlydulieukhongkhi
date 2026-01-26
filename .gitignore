@@ -30,8 +30,10 @@ backend/data/cog/*
 !backend/data/cog/.gitkeep
 
 # --- Specific Data Folders ---
-Chuyen de*
+Chuyen*
 Quan ly*
+backend/data/*
+!backend/data/.gitkeep
 
 # --- Javascript / Frontend ---
 frontend/node_modules/
