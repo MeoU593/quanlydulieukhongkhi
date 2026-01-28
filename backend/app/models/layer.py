@@ -24,5 +24,10 @@ class Layer(SQLModel, table=True):
     filepath: str = Field(max_length=500)
     file_size_bytes: Optional[int] = None
     
+    # Statistics
+    min_value: Optional[float] = None
+    max_value: Optional[float] = None
+    mean_value: Optional[float] = None
+    
     created_at: datetime = Field(default_factory=datetime.utcnow)
     status: str = Field(default="active")  # active, archived, deleted
