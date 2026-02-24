@@ -31,9 +31,9 @@ export const LoginPage: React.FC = () => {
             <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-md">
                 <div className="text-center mb-8">
                     <h1 className="text-3xl font-bold text-gray-900 mb-2">
-                        Air Quality Management
+                        Quản Lý Chất Lượng Không Khí
                     </h1>
-                    <p className="text-gray-600">Sign in to your account</p>
+                    <p className="text-gray-600">Đăng nhập vào hệ thống</p>
                 </div>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -45,7 +45,7 @@ export const LoginPage: React.FC = () => {
 
                     <div>
                         <label htmlFor="username" className="block text-sm font-medium text-gray-700 mb-2">
-                            Username
+                            Tên đăng nhập
                         </label>
                         <input
                             id="username"
@@ -53,14 +53,14 @@ export const LoginPage: React.FC = () => {
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
                             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition"
-                            placeholder="Enter your username"
+                            placeholder="Nhập tên đăng nhập của bạn"
                             required
                         />
                     </div>
 
                     <div>
                         <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
-                            Password
+                            Mật khẩu
                         </label>
                         <input
                             id="password"
@@ -68,7 +68,7 @@ export const LoginPage: React.FC = () => {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition"
-                            placeholder="Enter your password"
+                            placeholder="Nhập mật khẩu của bạn"
                             required
                         />
                     </div>
@@ -78,12 +78,12 @@ export const LoginPage: React.FC = () => {
                         disabled={loading}
                         className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                        {loading ? 'Signing in...' : 'Sign In'}
+                        {loading ? 'Đang đăng nhập...' : 'Đăng Nhập'}
                     </button>
                 </form>
 
                 <div className="mt-6 text-center text-sm text-gray-600">
-                    <p>Default credentials: admin / admin123</p>
+                    <p>Tài khoản mặc định: admin / admin123</p>
                 </div>
             </div>
         </div>

@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 backend/.env
 backend/venv/
+*.db
 backend/.pytest_cache/
 
 # --- GIS Data (CRITICAL: DO NOT COMMIT) ---

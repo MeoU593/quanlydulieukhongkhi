@@ -30,6 +30,7 @@ def get_layers(
     pollutant_code: Optional[str] = Query(None),
     year: Optional[int] = Query(None),
     period_type: Optional[str] = Query(None),
+    period_value: Optional[str] = Query(None),
     session: Session = Depends(get_session)
 ):
     """Get filtered list of layers"""
@@ -42,6 +43,8 @@ def get_layers(
         query = query.where(Layer.year == year)
     if period_type:
         query = query.where(Layer.period_type == period_type)
+    if period_value:
+        query = query.where(Layer.period_value == period_value)
     if pollutant_code:
         query = query.where(Pollutant.code == pollutant_code)
     
